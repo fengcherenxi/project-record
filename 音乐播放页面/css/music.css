@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+body {
+    margin: 0px;
+    background: url(../img/bgd_body.jpg);
+    /* 自适应 */
+    background-size: cover;
+}
+/* ------------------- banner begin------------------- */
+
+.banner {
+    width: 754px;
+    height: 550px;
+    opacity: 0.8;
+    margin-left: 0px;
+    box-shadow: 10px 15px 15px 1px black;
+    background: url(../img/bgd.jpg);
+    position: relative;
+}
+.banner_img {
+    float: left;
+}
+.banner_text div{
+    float: right;
+    margin-left: 15px;
+    font-family: KaiTi;
+    font-size: 35px;
+    color: white;
+    margin-top: 60px;
+}
+.banner_img ul li {
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+}
+.banner_img ul li img {
+    /* position: absolute; */
+    border-radius: 50%;
+    cursor: pointer;
+}
+.banner_text {
+    cursor: pointer;
+}
+.m1 {
+    left: 10px;
+    top: 50px;
+}
+.m2 {
+    left: 276px;
+    top: 150px;
+}
+.m3 {
+    left: 456px;
+    top: 30px;
+}
+.m4 {
+    left: 56px;
+    top: 314px;
+}
+.m5 {
+    left: 450px;
+    top: 380px;
+}
+
+@keyframes img_rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+.banner .img_rotate {
+    animation: img_rotate 3s infinite linear;
+}
+/* ------------------- player begin------------------- */
+.music {
+    width: 550px;
+    height: 120px;
+    background-color: black;
+    position: fixed;
+    left: 0px;
+    bottom: 50px;
+    opacity: 0.8;
+    box-shadow: 10px 15px 15px 1px black;
+}
+.music .img {
+    margin-top: 11px;
+    margin-left: 9px;
+    float: left;
+}
+.music .text {
+    float: left;
+    width: 234px;
+    height: 42px;
+    overflow: hidden;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 38px;
+    margin-left: 22px;
+}
+.music .btn {
+    float: left;
+    position: absolute;
+    left: 353px;
+}
+.music .btn a {
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: url(../img/播放器.jpeg);
+    margin-top: 42px;
+    margin-left: 15px;
+}
+.music .btn .prev {background-position: -54px -130px;}
+.music .btn .prev:hover{opacity: 0.2;}
+.music .btn .play {background-position: -361px -130px;}
+.music .btn .play:hover{opacity: 0.2;}
+.music .btn .pause {background-position: -293px -302px;}
+.music .btn .pause:hover{opacity: 0.2;}
+.music .btn .next {background-position: -256px -130px;}
+.music .btn .next:hover{opacity: 0.2;}
+
+.music .close {
+    float: right;
+    cursor: pointer;
+    border-top: 60px solid black;
+    border-bottom: 60px solid black;
+    border-right: 13px solid white;
+    border-left: 13px solid black;
+}
+.music .close:hover {
+    opacity: 0.2;
+}
+.music .open {
+    float: right;
+    cursor: pointer;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-right: 13px solid transparent;
+    border-left: 13px solid white;
+}
+.music .close .open:hover {
+    opacity: 0.2;
+}
